@@ -2,20 +2,20 @@
 int main() {
 
 int Tab[100] ;
-int i , Taille , Min ;
+int i , Taille , Max ;
 printf("Veuillez saisir La taille de tableau :");
 scanf("%d", &Taille);
 for (i=0 ; i<Taille ; i++){
     printf("Tab[%d] = ",i+1);
     scanf("%d",&Tab[i]);
 }
-Min = Tab [0];
+Max = Tab [0];
 for (i=1 ; i<Taille ; i++){
-    if(Min>Tab[i]){
-        Min = Tab [i];
+    if(Max<Tab[i]){
+        Max = Tab [i];
     }
 }
-printf("Le Minimum De Votre Tableau est : %d\n",Min);
+printf("Le Miximum De Votre Tableau est : %d\n",Max);
 
 return 0 ;
 }
